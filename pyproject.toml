@@ -1,0 +1,27 @@
+[project]
+name = "swcpy"
+version = "0.0.1"
+authors = [
+    { name = "marcille" },
+]
+description = "example sdk from hands-on api book for AI and Data Science"
+readme = "README.md"
+requires-python = ">=3.13"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Lincense :: OSI Approved :: MIT License",
+    "Operationg System :: OS Independent",
+]
+dependencies = [
+    "backoff>=2.2.1",
+    "dotenv>=0.9.9",
+    "httpx>=0.28.1",
+    "httpx-retries>=0.4.0",
+    "pydantic>=2.11.7",
+    "pytest>=8.4.1",
+]
+
+[build-system]
+requires = ["setuptools>=61.3.1"]
+build-backend= 'setuptools.build_meta'
