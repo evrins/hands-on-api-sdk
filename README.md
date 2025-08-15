@@ -56,7 +56,7 @@ player_file = client.get_bulk_player_file()
 
 data_dir = tempfile.gettempdir()
 # Write the file to disk to verify file download
-output_file_path = data_dir + 'players_file.csv'
+output_file_path = os.path.join(data_dir, 'players_file.csv')
 with open(output_file_path, 'wb') as f:
     f.write(player_file)
 ```
